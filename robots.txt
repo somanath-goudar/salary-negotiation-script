@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://salary-negotiation-script.vercel.app/sitemap.xml
+Sitemap: https://salary-negotiation-psi.vercel.app/sitemap.xml
