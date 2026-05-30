@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Negotiation Script Builder India — Free Word-for-Word Scripts</title>
+  <meta name="description" content="Enter your current CTC, the offer, and your target — get 3 personalised word-for-word salary negotiation scripts instantly. Free, India-specific, no signup.">
+  <link rel="canonical" href="https://salary-negotiation-script.vercel.app/">
+  <meta property="og:title" content="Salary Negotiation Script Builder India — Free Word-for-Word Scripts">
+  <meta property="og:description" content="Get 3 personalised salary negotiation scripts — assertive, collaborative, and email — with your exact numbers. India-focused. Free.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://salary-negotiation-script.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Salary Negotiation Script Builder India">
+  <meta name="twitter:description" content="Word-for-word scripts to negotiate your salary in India. Enter your numbers, get 3 ready-to-use scripts instantly.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Salary Negotiation Script Builder India",
+    "url": "https://salary-negotiation-script.vercel.app/",
+    "description": "Generate personalised, word-for-word salary negotiation scripts for Indian job seekers. Three script styles: assertive, collaborative, and email draft.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+    "creator": { "@type": "Organization", "name": "WebToolFarm" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salary-negotiation-script.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Salary Negotiation Script Builder India" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I negotiate salary in India?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The most effective approach is to have a clear number in mind, cite your experience and market benchmarks, and frame the ask professionally. Be specific about your target CTC and explain why you deserve it. Always negotiate before accepting — most Indian employers expect it and 70%+ of offers have room to move." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much hike should I ask for when switching jobs in India?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In India, a 20-30% hike is standard when switching companies in IT/software. Finance and consulting typically offer 15-25%. Marketing and operations roles see 15-20%. Anything below 15% when switching jobs is generally considered below market. Use the benchmark panel in this tool to see what's reasonable for your industry and city." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best salary negotiation script for India?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The best scripts are specific (use actual numbers), professional, and brief. For verbal negotiation, an assertive style works well: 'Thank you for the offer of ₹X. Based on my Y years of experience in [industry] and market rates in [city], I was expecting ₹Z. Is there flexibility there?' Use the collaborative version if you sense the hiring manager is warm and relationship-focused." }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I negotiate salary via email or phone in India?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Phone or video call is preferred for senior roles (5+ years experience) as it lets you build rapport and read the other person's reactions. Email is safer for freshers or if you need time to think — it also gives you a paper trail. This tool generates both formats so you can choose based on your situation." }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the company says the offer is final?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ask about other components: joining bonus, variable pay, ESOPs, review cycle, or remote work flexibility. Even if base salary is fixed, these can significantly increase total compensation. A good counter is: 'I understand if the base is fixed — is there flexibility on the joining bonus or the first performance review timeline?'" }
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0c0c14;
+      --surface: #161622;
+      --surface2: #1e1e2e;
+      --border: #2a2a3f;
+      --accent: #6366f1;
+      --accent2: #a5b4fc;
+      --green: #22c55e;
+      --yellow: #f59e0b;
+      --red: #f87171;
+      --text: #e2e4f0;
+      --muted: #7878a0;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0f0c2a 0%, #0c0c14 50%, #150c24 100%);
+      padding: 56px 20px 44px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 400px;
+      background: radial-gradient(ellipse, rgba(99,102,241,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .breadcrumb { font-size: 12px; color: var(--muted); margin-bottom: 18px; }
+    .breadcrumb a { color: var(--muted); }
+    .badge-india {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff9933, #ffffff, #138808);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(26px, 5vw, 44px);
+      font-weight: 800;
+      background: linear-gradient(135deg, #fff 0%, var(--accent2) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .subtitle { color: var(--muted); font-size: 17px; max-width: 580px; margin: 0 auto; }
+
+    /* MAIN */
+    main { max-width: 860px; margin: 0 auto; padding: 40px 20px 80px; }
+
+    /* FORM CARD */
+    .form-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 28px;
+    }
+    .form-card h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: 1 / -1; }
+    label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .input-wrap { position: relative; }
+    .prefix {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 15px;
+      color: var(--muted);
+      pointer-events: none;
+    }
+    input[type="number"], input[type="text"], select {
+      width: 100%;
+      padding: 12px 14px;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s;
+      appearance: none;
+    }
+    input[type="number"].has-prefix, input[type="text"].has-prefix {
+      padding-left: 28px;
+    }
+    input[type="number"]:focus, input[type="text"]:focus, select:focus {
+      border-color: var(--accent);
+    }
+    input[type="number"]::placeholder, input[type="text"]::placeholder { color: var(--muted); }
+    select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237878a0' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+
+    /* TOGGLE ROW */
+    .toggle-row {
+      display: flex;
+      gap: 10px;
+    }
+    .toggle-btn {
+      flex: 1;
+      padding: 11px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface2);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .toggle-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .toggle-btn:hover:not(.active) { background: var(--border); color: var(--text); }
+
+    /* GENERATE BUTTON */
+    .btn-generate {
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      border: none;
+      border-radius: var(--radius);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: opacity 0.2s, transform 0.1s;
+      margin-top: 8px;
+    }
+    .btn-generate:hover { opacity: 0.9; transform: translateY(-1px); }
+    .btn-generate:active { transform: none; }
+
+    /* BENCHMARK CARD */
+    .benchmark-card {
+      background: linear-gradient(135deg, #0f0c2a, #130c22);
+      border: 1px solid #3730a3;
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+    .benchmark-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .benchmark-header h3 { font-size: 15px; font-weight: 700; color: var(--accent2); }
+    .benchmark-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .bench-stat {
+      background: rgba(99,102,241,0.1);
+      border: 1px solid rgba(99,102,241,0.25);
+      border-radius: 10px;
+      padding: 14px;
+      text-align: center;
+    }
+    .bench-num { font-size: 22px; font-weight: 800; color: var(--accent2); margin-bottom: 4px; }
+    .bench-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .verdict {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .verdict-good { background: #14532d33; border: 1px solid #166534; color: var(--green); }
+    .verdict-high { background: #78350f33; border: 1px solid #92400e; color: var(--yellow); }
+    .verdict-low  { background: #1e1b4b33; border: 1px solid #3730a3; color: var(--accent2); }
+
+    /* SCRIPTS SECTION */
+    .scripts-section { margin-bottom: 28px; }
+    .scripts-section h2 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .script-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      background: var(--surface);
+      padding: 5px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    .script-tab {
+      flex: 1;
+      padding: 10px 14px;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .script-tab.active { background: var(--accent); color: #fff; }
+    .script-tab:hover:not(.active) { background: var(--surface2); color: var(--text); }
+
+    .script-panel { display: none; }
+    .script-panel.active { display: block; }
+
+    .script-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .script-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+    }
+    .script-title { font-size: 14px; font-weight: 700; }
+    .script-tag {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .tag-assertive { background: #7f1d1d33; color: #f87171; border: 1px solid #991b1b; }
+    .tag-collaborative { background: #14532d33; color: #4ade80; border: 1px solid #166534; }
+    .tag-email { background: #1e1b4b33; color: var(--accent2); border: 1px solid #3730a3; }
+
+    .script-body {
+      padding: 22px 22px 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text);
+      white-space: pre-wrap;
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+    .script-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      border-top: 1px solid var(--border);
+      margin-top: 20px;
+    }
+    .word-count { font-size: 12px; color: var(--muted); }
+    .btn-copy {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 18px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-copy:hover { background: var(--border); }
+    .btn-copy.copied { background: #14532d33; border-color: #166534; color: var(--green); }
+
+    /* TIPS CARD */
+    .tips-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+    .tips-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .tips-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .tips-list li {
+      display: flex;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--text);
+      align-items: flex-start;
+    }
+    .tip-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+    /* HOW IT WORKS */
+    .how-section {
+      margin: 52px 0 36px;
+      padding: 36px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .how-section h2 { font-size: 22px; font-weight: 800; margin-bottom: 6px; }
+    .section-sub { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; }
+    .step { text-align: center; padding: 20px 16px; background: var(--surface2); border-radius: 12px; }
+    .step-num {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 15px; margin: 0 auto 12px;
+    }
+    .step h4 { font-size: 13px; font-weight: 700; margin-bottom: 5px; }
+    .step p { font-size: 12px; color: var(--muted); }
+
+    /* FAQ */
+    .faq-section { margin: 36px 0; }
+    .faq-section h2 { font-size: 22px; font-weight: 800; margin-bottom: 20px; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 16px 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 14px;
+      user-select: none;
+    }
+    .faq-q:hover { background: var(--surface2); }
+    .faq-chevron { transition: transform 0.3s; font-size: 11px; color: var(--muted); }
+    .faq-a {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 20px 16px; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    /* FOOTER */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 28px 20px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); margin: 0 8px; }
+    footer a:hover { color: var(--text); }
+
+    /* HIDDEN */
+    .hidden { display: none !important; }
+
+    @media (max-width: 640px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .form-group.full { grid-column: 1; }
+      .benchmark-grid { grid-template-columns: 1fr 1fr; }
+      .how-section { padding: 24px 16px; }
+      .script-tabs { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="breadcrumb">
+    <a href="/">Home</a> › Salary Negotiation Script Builder India
+  </nav>
+  <div class="badge-india">🇮🇳 India Tools</div>
+  <h1>Salary Negotiation<br>Script Builder</h1>
+  <p class="subtitle">Enter your numbers — get 3 word-for-word scripts to negotiate your offer, India-style.</p>
+</header>
+
+<main>
+
+  <!-- FORM -->
+  <div class="form-card">
+    <h2>Your Details</h2>
+    <div class="form-grid">
+
+      <div class="form-group">
+        <label for="currentCtc">Current CTC</label>
+        <div class="input-wrap">
+          <span class="prefix">₹</span>
+          <input type="number" id="currentCtc" class="has-prefix" placeholder="e.g. 12" min="0" step="0.5">
+        </div>
+        <span style="font-size:11px;color:var(--muted);margin-top:3px">Lakhs per annum</span>
+      </div>
+
+      <div class="form-group">
+        <label for="offeredCtc">Offered CTC</label>
+        <div class="input-wrap">
+          <span class="prefix">₹</span>
+          <input type="number" id="offeredCtc" class="has-prefix" placeholder="e.g. 16" min="0" step="0.5">
+        </div>
+        <span style="font-size:11px;color:var(--muted);margin-top:3px">Lakhs per annum</span>
+      </div>
+
+      <div class="form-group">
+        <label for="targetCtc">Your Target CTC</label>
+        <div class="input-wrap">
+          <span class="prefix">₹</span>
+          <input type="number" id="targetCtc" class="has-prefix" placeholder="e.g. 20" min="0" step="0.5">
+        </div>
+        <span style="font-size:11px;color:var(--muted);margin-top:3px">Lakhs per annum</span>
+      </div>
+
+      <div class="form-group">
+        <label for="experience">Years of Experience</label>
+        <select id="experience">
+          <option value="">Select…</option>
+          <option value="0-1">0–1 year (Fresher)</option>
+          <option value="1-3">1–3 years</option>
+          <option value="3-5">3–5 years</option>
+          <option value="5-8">5–8 years</option>
+          <option value="8-12">8–12 years</option>
+          <option value="12+">12+ years (Senior)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="industry">Industry</label>
+        <select id="industry">
+          <option value="">Select…</option>
+          <option value="IT / Software">IT / Software</option>
+          <option value="Finance / Banking">Finance / Banking</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Healthcare">Healthcare</option>
+          <option value="Consulting">Consulting</option>
+          <option value="Manufacturing">Manufacturing</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        <select id="city">
+          <option value="">Select…</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Delhi / NCR">Delhi / NCR</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Pune">Pune</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Other city">Other city</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="role">Your Role / Designation</label>
+        <input type="text" id="role" placeholder="e.g. Senior Software Engineer">
+      </div>
+
+      <div class="form-group">
+        <label>Negotiation Mode</label>
+        <div class="toggle-row">
+          <button class="toggle-btn active" id="modeVerbal" onclick="setMode('verbal')">📞 Verbal</button>
+          <button class="toggle-btn" id="modeEmail" onclick="setMode('email')">📧 Email</button>
+        </div>
+      </div>
+
+    </div>
+    <button class="btn-generate" onclick="generateScripts()">✨ Generate My Negotiation Scripts</button>
+  </div>
+
+  <!-- BENCHMARK (hidden until generated) -->
+  <div class="benchmark-card hidden" id="benchmarkCard">
+    <div class="benchmark-header">
+      <span style="font-size:20px">📊</span>
+      <h3>Market Benchmark — <span id="benchIndustry"></span> in <span id="benchCity"></span></h3>
+    </div>
+    <div class="benchmark-grid">
+      <div class="bench-stat">
+        <div class="bench-num" id="benchHike"></div>
+        <div class="bench-label">Your Ask (%)</div>
+      </div>
+      <div class="bench-stat">
+        <div class="bench-num" id="benchMarket"></div>
+        <div class="bench-label">Typical Market Hike</div>
+      </div>
+      <div class="bench-stat">
+        <div class="bench-num" id="benchGap"></div>
+        <div class="bench-label">Diff vs Market</div>
+      </div>
+    </div>
+    <div class="verdict" id="verdictBox"></div>
+  </div>
+
+  <!-- SCRIPTS (hidden until generated) -->
+  <div class="scripts-section hidden" id="scriptsSection">
+    <h2>Your Personalised Scripts</h2>
+    <div class="script-tabs">
+      <button class="script-tab active" onclick="switchScript('assertive')">💪 Assertive</button>
+      <button class="script-tab" onclick="switchScript('collaborative')">🤝 Collaborative</button>
+      <button class="script-tab" onclick="switchScript('email')">📧 Email Draft</button>
+    </div>
+
+    <!-- ASSERTIVE -->
+    <div class="script-panel active" id="panel-assertive">
+      <div class="script-card">
+        <div class="script-card-header">
+          <div>
+            <div class="script-title">Assertive Script</div>
+            <div style="font-size:12px;color:var(--muted);margin-top:2px">Direct, confident — for phone or in-person</div>
+          </div>
+          <span class="script-tag tag-assertive">Assertive</span>
+        </div>
+        <div class="script-body" id="script-assertive"></div>
+        <div class="script-footer">
+          <span class="word-count" id="wc-assertive"></span>
+          <button class="btn-copy" onclick="copyScript('assertive')">📋 Copy Script</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLLABORATIVE -->
+    <div class="script-panel" id="panel-collaborative">
+      <div class="script-card">
+        <div class="script-card-header">
+          <div>
+            <div class="script-title">Collaborative Script</div>
+            <div style="font-size:12px;color:var(--muted);margin-top:2px">Partnership-framed — great for warm interviewers</div>
+          </div>
+          <span class="script-tag tag-collaborative">Collaborative</span>
+        </div>
+        <div class="script-body" id="script-collaborative"></div>
+        <div class="script-footer">
+          <span class="word-count" id="wc-collaborative"></span>
+          <button class="btn-copy" onclick="copyScript('collaborative')">📋 Copy Script</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="script-panel" id="panel-email">
+      <div class="script-card">
+        <div class="script-card-header">
+          <div>
+            <div class="script-title">Email Draft</div>
+            <div style="font-size:12px;color:var(--muted);margin-top:2px">Ready-to-send — edit <span style="color:var(--accent2)">[bracketed fields]</span> before sending</div>
+          </div>
+          <span class="script-tag tag-email">Email</span>
+        </div>
+        <div class="script-body" id="script-email"></div>
+        <div class="script-footer">
+          <span class="word-count" id="wc-email"></span>
+          <button class="btn-copy" onclick="copyScript('email')">📋 Copy Email</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIPS (hidden until generated) -->
+  <div class="tips-card hidden" id="tipsCard">
+    <h3>💡 Situation-Specific Tips</h3>
+    <ul class="tips-list" id="tipsList"></ul>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="how-section">
+    <h2>How It Works</h2>
+    <p class="section-sub">Four steps to your personalised negotiation script</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Enter Your Numbers</h4>
+        <p>Current CTC, offer in hand, and your target package in LPA.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Add Context</h4>
+        <p>Industry, years of experience, city, and your mode of negotiation.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Get 3 Scripts</h4>
+        <p>Assertive, collaborative, and email — each personalised with your exact figures.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Copy & Use</h4>
+        <p>One click to copy. Use verbatim or adjust the tone to match your personality.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How do I negotiate salary in India?<span class="faq-chevron">▼</span></div>
+      <div class="faq-a">The most effective approach is to have a clear number in mind, cite your experience and market benchmarks, and frame the ask professionally. Be specific about your target CTC and explain why you deserve it. Always negotiate before accepting — most Indian employers expect it and 70%+ of offers have room to move.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How much hike should I ask for when switching jobs in India?<span class="faq-chevron">▼</span></div>
+      <div class="faq-a">In India, a 20–30% hike is standard when switching companies in IT/software. Finance and consulting typically offer 15–25%. Marketing and operations roles see 15–20%. Anything below 15% when switching jobs is generally considered below market. Use the benchmark panel in this tool to see what's reasonable for your industry.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Should I negotiate via email or phone in India?<span class="faq-chevron">▼</span></div>
+      <div class="faq-a">Phone or video call is preferred for senior roles (5+ years) as it lets you build rapport and read reactions. Email is safer for freshers or if you need time to compose your thoughts — it also gives a paper trail. This tool generates both formats.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What if the company says the offer is final?<span class="faq-chevron">▼</span></div>
+      <div class="faq-a">Ask about other components: joining bonus, variable pay, ESOPs, earlier review cycle, or remote work flexibility. Even if base salary is fixed, these can significantly increase total compensation. Try: "I understand if the base is fixed — is there flexibility on the joining bonus or the first review timeline?"</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Will negotiating hurt my chances of getting the offer?<span class="faq-chevron">▼</span></div>
+      <div class="faq-a">Almost never. Companies in India expect candidates to negotiate — especially for mid-senior roles. A polite, well-reasoned counter-offer rarely results in rescinded offers. What matters is tone: be enthusiastic about the role while firm about the number. The scripts in this tool are specifically designed to be professional and non-confrontational.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Salary Negotiation Script Builder India · Free tool for Indian job seekers</p>
+  <p style="margin-top:8px">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </p>
+</footer>
+
+<script>
+  // ─── State ───
+  let negotiationMode = 'verbal';
+
+  function setMode(mode) {
+    negotiationMode = mode;
+    document.getElementById('modeVerbal').classList.toggle('active', mode === 'verbal');
+    document.getElementById('modeEmail').classList.toggle('active', mode === 'email');
+  }
+
+  function toggleFaq(el) {
+    el.closest('.faq-item').classList.toggle('open');
+  }
+
+  // ─── Industry benchmarks ───
+  const benchmarks = {
+    'IT / Software':     { min: 20, max: 30, label: '20–30%' },
+    'Finance / Banking': { min: 15, max: 25, label: '15–25%' },
+    'Marketing':         { min: 15, max: 22, label: '15–22%' },
+    'Healthcare':        { min: 10, max: 18, label: '10–18%' },
+    'Consulting':        { min: 18, max: 28, label: '18–28%' },
+    'Manufacturing':     { min: 12, max: 20, label: '12–20%' },
+    'Other':             { min: 12, max: 20, label: '12–20%' },
+  };
+
+  // ─── Format LPA ───
+  function fmt(n) {
+    if (n >= 100) return '₹' + (n / 100).toFixed(1) + ' Cr';
+    return '₹' + n + ' LPA';
+  }
+
+  // ─── Generate scripts ───
+  function generateScripts() {
+    const current  = parseFloat(document.getElementById('currentCtc').value);
+    const offered  = parseFloat(document.getElementById('offeredCtc').value);
+    const target   = parseFloat(document.getElementById('targetCtc').value);
+    const exp      = document.getElementById('experience').value;
+    const industry = document.getElementById('industry').value;
+    const city     = document.getElementById('city').value;
+    const role     = document.getElementById('role').value.trim() || 'this role';
+
+    // Validation
+    if (!current || !offered || !target) {
+      alert('Please fill in Current CTC, Offered CTC, and Target CTC.'); return;
+    }
+    if (!exp) { alert('Please select your years of experience.'); return; }
+    if (!industry) { alert('Please select your industry.'); return; }
+    if (!city) { alert('Please select your city.'); return; }
+    if (target <= offered) {
+      alert('Your target CTC should be higher than the offered CTC.'); return;
+    }
+
+    const offeredHike = Math.round(((offered - current) / current) * 100);
+    const targetHike  = Math.round(((target - current)  / current) * 100);
+    const askAboveOffer = Math.round(((target - offered) / offered) * 100);
+    const bench = benchmarks[industry] || benchmarks['Other'];
+    const midBench = Math.round((bench.min + bench.max) / 2);
+
+    // ── Benchmark card ──
+    const diff = targetHike - midBench;
+    document.getElementById('benchIndustry').textContent = industry;
+    document.getElementById('benchCity').textContent = city;
+    document.getElementById('benchHike').textContent = targetHike + '%';
+    document.getElementById('benchMarket').textContent = bench.label;
+    document.getElementById('benchGap').textContent = (diff >= 0 ? '+' : '') + diff + '%';
+
+    let verdictHTML, verdictClass;
+    if (targetHike >= bench.min && targetHike <= bench.max + 5) {
+      verdictClass = 'verdict-good';
+      verdictHTML = '✅ Your ask is reasonable and well within market range for ' + industry + ' in ' + city + '.';
+    } else if (targetHike > bench.max + 5) {
+      verdictClass = 'verdict-high';
+      verdictHTML = '⚠️ Your ask is ' + Math.abs(diff) + '% above the typical market range. Consider whether you have strong leverage (competing offers, niche skills) before pushing this hard.';
+    } else {
+      verdictClass = 'verdict-low';
+      verdictHTML = '💡 You might be underasking. The market typically gives ' + bench.label + ' for ' + industry + ' roles in ' + city + ' — you have room to push higher.';
+    }
+    const verdictEl = document.getElementById('verdictBox');
+    verdictEl.className = 'verdict ' + verdictClass;
+    verdictEl.textContent = verdictHTML;
+
+    // ── Experience label ──
+    const expMap = {
+      '0-1': 'under 1 year', '1-3': '2 years', '3-5': '4 years',
+      '5-8': '6 years', '8-12': '10 years', '12+': '12+ years'
+    };
+    const expLabel = expMap[exp] || exp;
+    const isFresher = exp === '0-1';
+
+    // ── Assertive ──
+    const assertive = negotiationMode === 'verbal'
+      ? `Thank you for the offer of ${fmt(offered)} for the ${role} position.
+
+I've genuinely enjoyed the interview process and I'm excited about the opportunity.
+
+That said, based on my ${expLabel} of experience in ${industry} and the current market rates for ${role} profiles in ${city}, I was expecting an offer in the range of ${fmt(target)}.
+
+My current CTC is ${fmt(current)}, so the offer represents a ${offeredHike}% increase — which I appreciate. However, ${fmt(target)} — a ${targetHike}% increase — is where I'm benchmarked in the current market.
+
+Is there flexibility to move the offer to ${fmt(target)}?`
+      : `I appreciate the verbal offer of ${fmt(offered)} for the ${role} position.
+
+To confirm my understanding: my current CTC is ${fmt(current)} and the offer represents a ${offeredHike}% increase.
+
+Based on my ${expLabel} in ${industry}, and market benchmarks for this level in ${city}, I'm targeting ${fmt(target)} — a ${targetHike}% hike over my current package.
+
+I'd appreciate it if you could revisit the offer at ${fmt(target)}. I'm confident this is aligned with the market and my profile.`;
+
+    // ── Collaborative ──
+    const collaborative = negotiationMode === 'verbal'
+      ? `I want to start by saying — I'm genuinely excited about this opportunity. The role, the team, and what you're building really excite me.
+
+I do want to be transparent with you: I've been thinking carefully about the offer of ${fmt(offered)}.
+
+My current CTC is ${fmt(current)}, and while I appreciate the ${offeredHike}% increase, my honest expectation — based on ${expLabel} in ${industry} and what peers in ${city} at this level are commanding — is closer to ${fmt(target)}.
+
+I'm not trying to play hardball. I just want to find a number that feels fair to both sides so I can come in fully committed from day one.
+
+Is there room to bring it closer to ${fmt(target)}?`
+      : `I really appreciate the offer of ${fmt(offered)} for the ${role} position — it tells me the team values the experience I bring.
+
+I want to be open with you: based on my ${expLabel} in ${industry} and the current compensation landscape for ${role} roles in ${city}, I was expecting something in the range of ${fmt(target)} — which is a ${targetHike}% increase over my current ${fmt(current)}.
+
+I'm very motivated to join the team. My ask isn't about the number alone — it's about feeling valued at the right level from the start.
+
+Is there a way to revisit the offer at ${fmt(target)}?`;
+
+    // ── Email ──
+    const email =
+`Subject: Offer Discussion — ${role} Position
+
+Dear [Hiring Manager's Name],
+
+Thank you for the offer for the ${role} position${city ? ' in ' + city : ''}. I'm genuinely excited about the opportunity and have greatly enjoyed the interview process.
+
+After careful consideration, I'd like to discuss the compensation.
+
+The offer of ${fmt(offered)} represents a ${offeredHike}% increase over my current CTC of ${fmt(current)}, which I appreciate. However, based on my ${expLabel} of experience in ${industry} and market benchmarks for ${role} profiles in ${city}, I was expecting an offer closer to ${fmt(target)} — a ${targetHike}% increase.
+
+I've done my research: ${industry} roles at this level in ${city} are typically seeing packages in the ${bench.label} range of current CTC when switching. ${fmt(target)} is well within that range.
+
+I'm very enthusiastic about this role and am confident I can contribute significantly from day one. I'd love to find a compensation structure that works for both of us.
+
+Could we discuss moving the offer to ${fmt(target)}? I'm happy to jump on a quick call if that's easier.
+
+Thank you for your time and consideration.
+
+Warm regards,
+[Your Name]
+[Phone Number]`;
+
+    // ── Render ──
+    document.getElementById('script-assertive').textContent    = assertive;
+    document.getElementById('script-collaborative').textContent = collaborative;
+    document.getElementById('script-email').textContent        = email;
+
+    const wc = (t) => t.split(/\s+/).filter(Boolean).length + ' words';
+    document.getElementById('wc-assertive').textContent    = wc(assertive);
+    document.getElementById('wc-collaborative').textContent = wc(collaborative);
+    document.getElementById('wc-email').textContent        = wc(email);
+
+    // ── Tips ──
+    const tips = [];
+    if (offeredHike < 15) tips.push({ icon: '⚠️', text: 'The offer is a below-market hike (' + offeredHike + '%). You have strong ground to push back — this is well below the typical ' + bench.label + ' range for ' + industry + '.' });
+    if (isFresher) tips.push({ icon: '🎓', text: 'As a fresher, focus on the role, learning opportunity, and future growth. Avoid aggressive scripts — the collaborative version will serve you best.' });
+    if (exp === '8-12' || exp === '12+') tips.push({ icon: '💼', text: 'At your seniority level, don't forget to negotiate beyond base pay: ESOPs, joining bonus, flexible working, and review cycle timing can add significant value.' });
+    tips.push({ icon: '🏙️', text: city + ' is a competitive market. Mention that you\'re comparing offers from companies in the same city to strengthen your position.' });
+    tips.push({ icon: '⏳', text: 'Don\'t feel pressured to answer on the spot. It\'s completely normal to say: "I need 24–48 hours to review the offer and get back to you."' });
+    tips.push({ icon: '🔄', text: 'If the base is truly fixed, pivot: "Is there flexibility on the joining bonus or the timing of the first performance review?"' });
+
+    const tipsList = document.getElementById('tipsList');
+    tipsList.innerHTML = tips.map(t =>
+      `<li><span class="tip-icon">${t.icon}</span><span>${t.text}</span></li>`
+    ).join('');
+
+    // ── Show cards ──
+    document.getElementById('benchmarkCard').classList.remove('hidden');
+    document.getElementById('scriptsSection').classList.remove('hidden');
+    document.getElementById('tipsCard').classList.remove('hidden');
+
+    // Reset to assertive tab
+    switchScript('assertive');
+
+    // Scroll to results
+    document.getElementById('benchmarkCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ─── Script tab switching ───
+  function switchScript(type) {
+    document.querySelectorAll('.script-tab').forEach((btn, i) => {
+      const types = ['assertive', 'collaborative', 'email'];
+      btn.classList.toggle('active', types[i] === type);
+    });
+    document.querySelectorAll('.script-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('panel-' + type).classList.add('active');
+  }
+
+  // ─── Copy ───
+  function copyScript(type) {
+    const text = document.getElementById('script-' + type).textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.querySelector(`#panel-${type} .btn-copy`);
+      btn.textContent = '✓ Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.innerHTML = '📋 Copy ' + (type === 'email' ? 'Email' : 'Script');
+        btn.classList.remove('copied');
+      }, 2000);
+    });
+  }
+</script>
+
+</body>
+</html>
