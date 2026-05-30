@@ -793,7 +793,9 @@
     const exp      = document.getElementById('experience').value;
     const industry = document.getElementById('industry').value;
     const city     = document.getElementById('city').value;
-    const role     = document.getElementById('role').value.trim() || 'this role';
+    const role     = document.getElementById('role').value.trim();
+    const rolePhrase = role ? `the ${role} position` : 'this position';
+    const roleStr    = role || 'professional';
 
     // Validation
     if (!current || !offered || !target) {
@@ -845,16 +847,16 @@
 
     // ── Assertive ──
     const assertive = negotiationMode === 'verbal'
-      ? `Thank you for the offer of ${fmt(offered)} for the ${role} position.
+      ? `Thank you for the offer of ${fmt(offered)} for ${rolePhrase}.
 
 I've genuinely enjoyed the interview process and I'm excited about the opportunity.
 
-That said, based on my ${expLabel} of experience in ${industry} and the current market rates for ${role} profiles in ${city}, I was expecting an offer in the range of ${fmt(target)}.
+That said, based on my ${expLabel} of experience in ${industry} and the current market rates for ${roleStr} profiles in ${city}, I was expecting an offer in the range of ${fmt(target)}.
 
 My current CTC is ${fmt(current)}, so the offer represents a ${offeredHike}% increase — which I appreciate. However, ${fmt(target)} — a ${targetHike}% increase — is where I'm benchmarked in the current market.
 
 Is there flexibility to move the offer to ${fmt(target)}?`
-      : `I appreciate the verbal offer of ${fmt(offered)} for the ${role} position.
+      : `I appreciate the verbal offer of ${fmt(offered)} for ${rolePhrase}.
 
 To confirm my understanding: my current CTC is ${fmt(current)} and the offer represents a ${offeredHike}% increase.
 
@@ -873,9 +875,9 @@ My current CTC is ${fmt(current)}, and while I appreciate the ${offeredHike}% in
 I'm not trying to play hardball. I just want to find a number that feels fair to both sides so I can come in fully committed from day one.
 
 Is there room to bring it closer to ${fmt(target)}?`
-      : `I really appreciate the offer of ${fmt(offered)} for the ${role} position — it tells me the team values the experience I bring.
+      : `I really appreciate the offer of ${fmt(offered)} for ${rolePhrase} — it tells me the team values the experience I bring.
 
-I want to be open with you: based on my ${expLabel} in ${industry} and the current compensation landscape for ${role} roles in ${city}, I was expecting something in the range of ${fmt(target)} — which is a ${targetHike}% increase over my current ${fmt(current)}.
+I want to be open with you: based on my ${expLabel} in ${industry} and the current compensation landscape for ${roleStr} roles in ${city}, I was expecting something in the range of ${fmt(target)} — which is a ${targetHike}% increase over my current ${fmt(current)}.
 
 I'm very motivated to join the team. My ask isn't about the number alone — it's about feeling valued at the right level from the start.
 
@@ -883,15 +885,15 @@ Is there a way to revisit the offer at ${fmt(target)}?`;
 
     // ── Email ──
     const email =
-`Subject: Offer Discussion — ${role} Position
+`Subject: Offer Discussion — ${role || 'the Role'}
 
 Dear [Hiring Manager's Name],
 
-Thank you for the offer for the ${role} position${city ? ' in ' + city : ''}. I'm genuinely excited about the opportunity and have greatly enjoyed the interview process.
+Thank you for the offer for ${rolePhrase}${city ? ' in ' + city : ''}. I'm genuinely excited about the opportunity and have greatly enjoyed the interview process.
 
 After careful consideration, I'd like to discuss the compensation.
 
-The offer of ${fmt(offered)} represents a ${offeredHike}% increase over my current CTC of ${fmt(current)}, which I appreciate. However, based on my ${expLabel} of experience in ${industry} and market benchmarks for ${role} profiles in ${city}, I was expecting an offer closer to ${fmt(target)} — a ${targetHike}% increase.
+The offer of ${fmt(offered)} represents a ${offeredHike}% increase over my current CTC of ${fmt(current)}, which I appreciate. However, based on my ${expLabel} of experience in ${industry} and market benchmarks for ${roleStr} profiles in ${city}, I was expecting an offer closer to ${fmt(target)} — a ${targetHike}% increase.
 
 I've done my research: ${industry} roles at this level in ${city} are typically seeing packages in the ${bench.label} range of current CTC when switching. ${fmt(target)} is well within that range.
 
@@ -919,7 +921,7 @@ Warm regards,
     const tips = [];
     if (offeredHike < 15) tips.push({ icon: '⚠️', text: 'The offer is a below-market hike (' + offeredHike + '%). You have strong ground to push back — this is well below the typical ' + bench.label + ' range for ' + industry + '.' });
     if (isFresher) tips.push({ icon: '🎓', text: 'As a fresher, focus on the role, learning opportunity, and future growth. Avoid aggressive scripts — the collaborative version will serve you best.' });
-    if (exp === '8-12' || exp === '12+') tips.push({ icon: '💼', text: 'At your seniority level, don't forget to negotiate beyond base pay: ESOPs, joining bonus, flexible working, and review cycle timing can add significant value.' });
+    if (exp === '8-12' || exp === '12+') tips.push({ icon: '💼', text: 'At your seniority level, don\'t forget to negotiate beyond base pay: ESOPs, joining bonus, flexible working, and review cycle timing can add significant value.' });
     tips.push({ icon: '🏙️', text: city + ' is a competitive market. Mention that you\'re comparing offers from companies in the same city to strengthen your position.' });
     tips.push({ icon: '⏳', text: 'Don\'t feel pressured to answer on the spot. It\'s completely normal to say: "I need 24–48 hours to review the offer and get back to you."' });
     tips.push({ icon: '🔄', text: 'If the base is truly fixed, pivot: "Is there flexibility on the joining bonus or the timing of the first performance review?"' });
